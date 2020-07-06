@@ -1,0 +1,12 @@
+<div id="banner">Здесь могла бы быть ваша реклама</div>
+<script>
+  function onmessage(event){
+    /* if (event.origin !== 'itstep.demo') {
+      console.log('Wrong sender!')
+      return
+    } */
+    banner.innerHTML = event.data
+    console.log(event)
+  }
+  window.addEventListener("message", onmessage, false)
+</script>
